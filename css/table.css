@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+table {
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    border-collapse: collapse;
+    margin: 100px 30px;
+}
+
+th, td {
+    padding: 10px;
+    height: 50px;
+    text-align: left;
+}
+
+th {
+    padding: 20px 15px;
+    font-size: 22px;
+}
+
+tr.expanded {
+    height: 90px;
+}
+
+tr {
+    border-bottom: 1px solid #fff;
+    text-align: left;
+}
+
+td {
+    width: 10%;
+    text-align: left;
+}
+
+td:nth-child(1) {
+    width: 10%;
+}
+
+td:nth-child(2) {
+    width: 60%;
+    padding: 0px;
+    padding-right: 100px; /* 변경: 오른쪽 패딩을 10px로 설정하여 약간 오른쪽으로 이동 */
+}
+
+td:nth-child(3){ 
+    width: 15%;
+}
+
+td:nth-child(4){ 
+    width: 0%;
+}
+
+
+
+tr:first-child {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    td:nth-child(3), td:nth-child(4) {
+        display: none;
+    }
+
+    td:nth-child(2) {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    tr:first-child {
+        font-size: 25px; 
+    }
+
+    
+}
+
+
+
+
+.image-div img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    padding: 30px, 100px;
+    left: 41%;
+}
+
+
+/* @media (min-width: 768px) {
+    .image-div img {
+        display: block;
+    }
+} */
+
+@media (max-width: 767px) {
+    .image-div img {
+        display: none;
+    }
+}

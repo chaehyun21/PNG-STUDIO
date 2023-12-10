@@ -1,0 +1,33 @@
+/* 동그라미 커서 */
+
+.cursor {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    background-color: white;
+    mix-blend-mode: difference;
+    pointer-events: none; /* 커서 요소 클릭 무시 */
+    transform: translate(-50%, -50%); /* 커서 중앙 정렬 */
+}
+
+
+.cursor-animation {
+    animation: cursorPulse 3s infinite alternate;
+}
+
+/* @keyframes cursorPulse {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(2);
+    }
+} */
+
+@media (max-width: 767px) {
+     .cursor {
+        display: none;
+    }
+}

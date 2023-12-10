@@ -1,0 +1,65 @@
+
+.menu-container {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.left-menu a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+    mix-blend-mode: difference; 
+}
+
+.left-menu span {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    mix-blend-mode: difference;
+}
+
+@media (max-width: 767px) {
+    .menu-container {
+        top: 0px; 
+        left: 0px;
+        right: 0px; 
+}
+
+}
+
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    cursor: pointer;
+    color: white;
+    font-size: 27px;
+    mix-blend-mode: difference;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    /* color: white;  */
+    color: inherit;
+    
+}
+
+a:hover {
+    color: white;
+}
